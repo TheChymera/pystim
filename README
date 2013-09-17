@@ -1,0 +1,14 @@
+pyStim 0.0.2
+2013-08-14
+=======
+
+Python script for automated stimulus sequence calculation. Contains sub-routines for stimulus presentation paradigms (currently only “harari”).
+
+Currently selects non-identical files per trial in a random guessing manner until the criteria are validated. A convergent algorythm may be implemented in future versions.
+
+DEPENDS on:
+numpy
+pandas
+
+Released under the GPLv3 license.
+Project led by Horea Christian (address all correspondence to: h.chr@mail.ru)
