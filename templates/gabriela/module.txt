@@ -1,0 +1,4 @@
+ picture{{
+ description = "{name}"; bitmap   {{ filename = "{t}"; scale_factor = 0.7;}} pictfile01;  x=0;   y=148; 
+										bitmap   {{ filename = "{l}"; scale_factor = 0.7;}} leftfile01;  x=296; y=-148;
+										bitmap   {{ filename = "{r}"; scale_factor = 0.7;}} rightfile01; x=-296;y=-148;}}pict{N};  
