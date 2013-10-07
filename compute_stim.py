@@ -90,11 +90,25 @@ elif output_format == 'gabriela':
     footer = open(local_dir+templates_dir+tamplate_subdir+'footer.txt', 'r')
     module = open(local_dir+templates_dir+tamplate_subdir+'module.txt', 'r')
     
-    files_list = [easy_em_id, hard_em_id, ]
-    output_file = output_dir + sequence_name + '_' + output_format + '.csv'
-    with save_gen_csv(output_file) as outfile:
-        outfile.write(header.read())
-        
-        outfile.write(footer.read())
+    for condition_file_id in ['cont_hard', 'cont_easy', 'em_hard', 'em_easy']:
+        output_file = output_dir + sequence_name + '_' + output_format + '_' + condition_file_id + '.csv'
+        with save_gen_csv(output_file) as outfile:
+            outfile.write(header.read())
+            if condition_file_id == 'cont_hard':
+                for trial in sequence[(sequence['scrambling'] == scrambling_steps_id[0])]:
+                    format_module()
+            elif condition_file_id == 'cont_easy':
+                for trial in sequence[(sequence['scrambling'] == scrambling_steps_id[1])]:
+                    format_module()
+            elif condition_file_id == 'em_hard':
+                for trial in sequence[(sequence['scrambling'] == 0) & (sequence['emotion intensity'] == 40)]:
+                    format_module()
+            elif condition_file_id == 'em_easy':
+                for trial in sequence[(sequence['scrambling'] == 0) & (sequence['emotion intensity'] == 100)]:
+                    format_module()
+                    
+            
+            outfile.write(footer.read())
 
-
+def format_module():
+    print trial
