@@ -1,6 +1,6 @@
 __author__ = 'Horea Christian'
 
-def save_csv(filename):
+def pre_save(filename, extension=''):
     from os import path, makedirs
     from shutil import move
     from datetime import date, datetime
@@ -11,22 +11,22 @@ def save_csv(filename):
 		pass
     else:
 		makedirs(path.dirname(filename))
-    if path.isfile(filename + '.csv'):
+    if path.isfile(filename + extension):
         if path.isdir(path.dirname(filename)+'/.backup'):
             pass
         else: makedirs(path.dirname(filename)+'/.backup')        
         newname = path.dirname(filename)+'/.backup/'+path.basename(filename)+'_'+time
-        move(filename+'.csv', newname+'.csv')
-        print 'moved pre-existing data file '+ filename +'.csv to backup location ('+newname+'.csv)'
+        move(filename+extension, newname+extension)
+        print 'moved pre-existing data file '+ filename +'.csv to backup location ('+newname+extension+')'
     else: pass
     
 def save_pd_csv(dataframe, filename):
-    save_csv(filename)
+    pre_save(filename, extension='.csv')
     dataframe.to_csv(filename+'.csv')
 
-def save_gen_csv(filename):
-    save_csv(filename)
-    return open(filename, 'a')
+def save_gen(filename, extension=''):
+    pre_save(filename, extension)
+    return open(filename+extension, 'a')
 
 def get_config_file():
 	from os import listdir, path
