@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from numpy.random import permutation, choice, sample
 
-def harari(top_stimuli, targets, distractors, forbid_identical_targets=True, suffix_characters=0):
+def hariri(top_stimuli, targets, distractors, forbid_identical_targets=True, suffix_characters=0):
     randomness = list(permutation(np.tile([[True], [False]], (len(top_stimuli)/2,1)))) #generate balanced randomness for left/right target placing
     
     if forbid_identical_targets:
