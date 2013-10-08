@@ -30,6 +30,7 @@ image-*.pdf
 image.pdf
 image.pmg
 image*.png
+*.backup/
 
 #geany
 geany_run_script.sh
