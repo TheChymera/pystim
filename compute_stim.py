@@ -9,7 +9,7 @@ def main(output_format=False, scrambling_steps_id=False):
     from os import path, listdir
     from itertools import product
     from data_functions import get_config_file, save_pd_csv, save_gen
-    from routines import harari
+    from routines import hariri
     from string import Template
     
     config = get_config_file()
@@ -45,12 +45,14 @@ def main(output_format=False, scrambling_steps_id=False):
     stimuli_dir = path.expanduser(stimuli_dir) # expands the path if it is specified with tilde for "home"
     stimlist = permutation(listdir(stimuli_dir))
     sequence = pd.DataFrame([]) # blank dataframe to add the stimuli lists to
+    if make_blocks:
+        sequence_name = sequence_name + '_' + str(block_size) + 'block'
     
     # 100% emotion trials
     for variable_categories in product([male_id, female_id], [[happy_id, fearful_id],[fearful_id,happy_id]]):
         top_stimuli = [a for a in stimlist if variable_categories[0] in a and variable_categories[1][0] in a and easy_em_id in a and scrambling_id not in a]
         distractors = [a for a in stimlist if variable_categories[0] in a and variable_categories[1][1] in a and easy_em_id in a and scrambling_id not in a]
-        subsequence = harari(top_stimuli, top_stimuli, distractors, suffix_characters=11) # with suffix identifier skipping because we don't want the same person twice in a slide
+        subsequence = hariri(top_stimuli, top_stimuli, distractors, suffix_characters=11) # with suffix identifier skipping because we don't want the same person twice in a slide
         sequence = pd.concat([sequence, subsequence], ignore_index=True)
     
     # 40% emotion trials
@@ -58,7 +60,7 @@ def main(output_format=False, scrambling_steps_id=False):
         top_stimuli = [a for a in stimlist if variable_categories[0] in a and variable_categories[1][0] in a and easy_em_id in a and scrambling_id not in a]
         distractors = [a for a in stimlist if variable_categories[0] in a and variable_categories[1][1] in a and hard_em_id in a and scrambling_id not in a]
         targets = [a for a in stimlist if variable_categories[0] in a and variable_categories[1][0] in a and hard_em_id in a and scrambling_id not in a]
-        subsequence = harari(top_stimuli, targets, distractors, suffix_characters=11) # with suffix identifier skipping because we don't want the same person twice in a slide
+        subsequence = hariri(top_stimuli, targets, distractors, suffix_characters=11) # with suffix identifier skipping because we don't want the same person twice in a slide
         sequence = pd.concat([sequence, subsequence], ignore_index=True)
         
     # scrambling trials
@@ -68,7 +70,7 @@ def main(output_format=False, scrambling_steps_id=False):
         for idx, i in enumerate(distractors):
             distractors[idx] = distractors[idx][:-5]+'b.jpg'
         targets = top_stimuli # we use identical images for identification
-        subsequence = harari(top_stimuli, targets, distractors, forbid_identical_targets=False)
+        subsequence = hariri(top_stimuli, targets, distractors, forbid_identical_targets=False)
         sequence = pd.concat([sequence, subsequence], ignore_index=True)
     
     # Fill out meta-fileds
