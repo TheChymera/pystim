@@ -125,7 +125,7 @@ def main(output_format=False, scrambling_steps_id=False):
 def format_module(outfile, module, trial, idx):
     from os import path
     trial_name, _ = path.splitext(trial['top face'])
-    outfile.write(module.substitute(name=trial_name, t=trial['top face'], l=trial['left face'], r=trial['right face'], N="%02d" % (idx)))
+    outfile.write(module.substitute(name=trial_name, t=trial['top face'], l=trial['left face'], r=trial['right face']))
     
 if __name__ == '__main__':
 	main()
