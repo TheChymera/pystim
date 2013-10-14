@@ -24,7 +24,7 @@ def hariri(top_stimuli, targets, distractors, forbid_identical_targets=True, suf
 		targets = list(permutation(targets))
     distractors = distractors[::-1]
     targets = targets[::-1]
-    stimseq = pd.DataFrame(index=np.arange(len(top_stimuli)), columns={'emotion': [], 'emotion intensity': [], 'scrambling': [], 'gender': [], 'top face': [], 'left face': [], 'right face': [], 'block': [], 'correct answer': []})
+    stimseq = pd.DataFrame(index=np.arange(len(top_stimuli)), columns={'emotion': [], 'emotion intensity': [], 'scrambling': [], 'gender': [], 'top face': [], 'left face': [], 'right face': [], 'correct answer': []})
     stimseq['top face'] = top_stimuli
     for pos, top_stim in enumerate(stimseq['top face']):
 	is_right = randomness.pop()

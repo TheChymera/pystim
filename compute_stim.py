@@ -8,7 +8,7 @@ def main(output_format=False, scrambling_steps_id=False):
     from numpy.random import permutation, choice, sample
     from os import path, listdir
     from itertools import product
-    from data_functions import get_config_file, save_pd_csv, save_gen
+    from data_functions import get_config_file, save_pd_csv, save_gen, save_pd_tsv
     from routines import hariri
     from string import Template
     
@@ -40,6 +40,7 @@ def main(output_format=False, scrambling_steps_id=False):
     keep_oldsequence = config.getboolean('Parameters', 'keep_oldsequence')
     #END IMPORT VARIABLES
     
+    scrambling_steps_id_withprefix = [scrambling_steps_prefix+str(i) for i in scrambling_steps_id]
     local_dir = path.dirname(path.realpath(__file__)) + '/' 
     output_dir = local_dir + output_subdir
 
@@ -111,23 +112,36 @@ def main(output_format=False, scrambling_steps_id=False):
         #~ print module.substitute(name='a', t='a', l='a', r='a', N='a')
         
         for condition_file_id in ['cont_hard', 'cont_easy', 'em_hard', 'em_easy']:
+            #START REMAP SOME VALUES
+            sequence.ix[(sequence['correct answer'] == 'right'), 'correct answer'] = 1
+            sequence.ix[(sequence['correct answer'] == 'left'), 'correct answer'] = 2
+            #END REMAP SOME VALUES
             output_file = output_dir + sequence_name + '_' + output_format + '_' + condition_file_id
             with save_gen(output_file, extension='.txt') as outfile:
                 outfile.write(header)
                 if condition_file_id == 'cont_hard':
-                    for idx, (_, trial) in enumerate(sequence[(sequence['scrambling'] == scrambling_steps_id[0])].iterrows()):
-                        format_module(outfile, module, trial, idx+1)
+                    for idx, trial in sequence[(sequence['scrambling'] == scrambling_steps_id[0])].iterrows():
+                        format_module(outfile, module, trial, idx)
                 elif condition_file_id == 'cont_easy':
-                    for idx, (_, trial) in enumerate(sequence[(sequence['scrambling'] == scrambling_steps_id[1])].iterrows()):
-                        format_module(outfile, module, trial, idx+1)
+                    for idx, trial in sequence[(sequence['scrambling'] == scrambling_steps_id[1])].iterrows():
+                        format_module(outfile, module, trial, idx)
                 elif condition_file_id == 'em_hard':
-                    for idx, (_, trial) in enumerate(sequence[(sequence['scrambling'] == 0) & (sequence['emotion intensity'] == 40)].iterrows()):
-                        format_module(outfile, module, trial, idx+1)
+                    for idx, trial in sequence[(sequence['scrambling'] == 0) & (sequence['emotion intensity'] == 40)].iterrows():
+                        format_module(outfile, module, trial, idx)
                 elif condition_file_id == 'em_easy':
-                    for idx, (_, trial) in enumerate(sequence[(sequence['scrambling'] == 0) & (sequence['emotion intensity'] == 100)].iterrows()):
-                        format_module(outfile, module, trial, idx+1)
+                    for idx, trial in sequence[(sequence['scrambling'] == 0) & (sequence['emotion intensity'] == 100)].iterrows():
+                        format_module(outfile, module, trial, idx)
                 else: raise InputError('Your condition_file_id values do not correspond to the script\'s expectations.')
                 outfile.write(footer)
+    elif output_format == 'gabriela2':
+        sequence['name'] = sequence['top face']
+        for pos, le_name in enumerate(sequence['name']):
+            sequence['name'].ix[pos] = path.splitext(le_name)[0] + ' ;'
+        sequence.ix[(sequence['correct answer'] == 'right'), 'correct answer'] = 1
+        sequence.ix[(sequence['correct answer'] == 'left'), 'correct answer'] = 2
+        sequence = sequence.rename(columns={'top face': 'fname_up', 'left face': 'fname_down_left', 'right face': 'fname_down_right', 'correct answer': 'rating'})
+        output_file = output_dir + sequence_name + '_' + output_format
+        save_pd_tsv(sequence, output_file)
     output_file = output_dir + '.' + sequence_name + 'last_exported_sequence'
     save_pd_csv(sequence, output_file)
     # BEGIN OUTPUT FILE FORMATTING

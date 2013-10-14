@@ -23,6 +23,10 @@ def pre_save(filename, extension=''):
 def save_pd_csv(dataframe, filename):
     pre_save(filename, extension='.csv')
     dataframe.to_csv(filename+'.csv')
+    
+def save_pd_tsv(dataframe, filename):
+    pre_save(filename, extension='.tsv')
+    dataframe.to_csv(filename+'.tsv', sep='\t')
 
 def save_gen(filename, extension=''):
     pre_save(filename, extension)
