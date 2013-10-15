@@ -1,0 +1,130 @@
+array{
+ picture{
+ description = "26M_HA_C100"; bitmap   { filename = "26M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "21M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "23M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=0;  
+ picture{
+ description = "21M_HA_C100"; bitmap   { filename = "21M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "24M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "25M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=1;  
+ picture{
+ description = "23M_HA_C100"; bitmap   { filename = "23M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "22M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "24M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=2;  
+ picture{
+ description = "27M_HA_C100"; bitmap   { filename = "27M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "26M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "28M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=3;  
+ picture{
+ description = "22M_HA_C100"; bitmap   { filename = "22M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "25M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "23M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=4;  
+ picture{
+ description = "28M_HA_C100"; bitmap   { filename = "28M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "26M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "27M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=5;  
+ picture{
+ description = "24M_HA_C100"; bitmap   { filename = "24M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "27M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "28M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=6;  
+ picture{
+ description = "25M_HA_C100"; bitmap   { filename = "25M_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "22M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "21M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=7;  
+ picture{
+ description = "21M_FE_C100"; bitmap   { filename = "21M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "27M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "25M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=8;  
+ picture{
+ description = "22M_FE_C100"; bitmap   { filename = "22M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "23M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "24M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=9;  
+ picture{
+ description = "24M_FE_C100"; bitmap   { filename = "24M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "21M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "27M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=10;  
+ picture{
+ description = "23M_FE_C100"; bitmap   { filename = "23M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "21M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "26M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=11;  
+ picture{
+ description = "25M_FE_C100"; bitmap   { filename = "25M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "24M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "23M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=12;  
+ picture{
+ description = "27M_FE_C100"; bitmap   { filename = "27M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "28M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "22M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=13;  
+ picture{
+ description = "26M_FE_C100"; bitmap   { filename = "26M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "22M_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "28M_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=14;  
+ picture{
+ description = "28M_FE_C100"; bitmap   { filename = "28M_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "26M_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "25M_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=15;  
+ picture{
+ description = "08F_HA_C100"; bitmap   { filename = "08F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "03F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "02F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=16;  
+ picture{
+ description = "04F_HA_C100"; bitmap   { filename = "04F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "06F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "05F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=17;  
+ picture{
+ description = "06F_HA_C100"; bitmap   { filename = "06F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "05F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "04F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=18;  
+ picture{
+ description = "01F_HA_C100"; bitmap   { filename = "01F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "08F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "07F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=19;  
+ picture{
+ description = "03F_HA_C100"; bitmap   { filename = "03F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "02F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "06F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=20;  
+ picture{
+ description = "05F_HA_C100"; bitmap   { filename = "05F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "01F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "08F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=21;  
+ picture{
+ description = "02F_HA_C100"; bitmap   { filename = "02F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "07F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "04F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=22;  
+ picture{
+ description = "07F_HA_C100"; bitmap   { filename = "07F_HA_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "03F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "01F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=23;  
+ picture{
+ description = "01F_FE_C100"; bitmap   { filename = "01F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "08F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "04F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=24;  
+ picture{
+ description = "07F_FE_C100"; bitmap   { filename = "07F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "03F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "02F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=25;  
+ picture{
+ description = "04F_FE_C100"; bitmap   { filename = "04F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "01F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "02F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=26;  
+ picture{
+ description = "02F_FE_C100"; bitmap   { filename = "02F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "04F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "05F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=27;  
+ picture{
+ description = "06F_FE_C100"; bitmap   { filename = "06F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "03F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "07F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=28;  
+ picture{
+ description = "03F_FE_C100"; bitmap   { filename = "03F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "08F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "05F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=29;  
+ picture{
+ description = "08F_FE_C100"; bitmap   { filename = "08F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "06F_FE_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "01F_HA_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=30;  
+ picture{
+ description = "05F_FE_C100"; bitmap   { filename = "05F_FE_C100.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "06F_HA_C100.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "07F_FE_C100.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=31;  
+ }Face_up_array;

@@ -43,9 +43,11 @@ def main(output_format=False, scrambling_steps_id=False):
     scrambling_steps_id_withprefix = [scrambling_steps_prefix+str(i) for i in scrambling_steps_id]
     local_dir = path.dirname(path.realpath(__file__)) + '/' 
     output_dir = local_dir + output_subdir
-
-    if keep_oldsequence and path.isfile(output_dir + '.' + sequence_name + 'last_exported_sequence'):
-        sequence = pd.DataFrame.from_csv(output_dir + '.' + sequence_name + 'last_exported_sequence.csv')
+    
+    #check for already existing sequence file
+    if keep_oldsequence and path.isfile(output_dir + '.' + sequence_name + '-last_exported_sequence.csv'):
+        sequence = pd.DataFrame.from_csv(output_dir + '.' + sequence_name + '-last_exported_sequence.csv')
+        print('Keeping old sequence found at '+output_dir + '.' + sequence_name + '-last_exported_sequence.csv . Please unset "keep_oldsequence" in '+path.dirname(path.realpath(__file__))+'/gen.cfg to avoid this.')
     else:
         ### START CREATING THE NEW STIMLIST DATAFRAME
         scrambling_steps_id_withprefix = [scrambling_steps_prefix+str(i) for i in scrambling_steps_id]
@@ -97,12 +99,16 @@ def main(output_format=False, scrambling_steps_id=False):
             for step in range(0, len(sequence)*block_size, block_size):
                 sequence.ix[step:step+block_size,'block'] = block_number
                 block_number +=1
+                
+        #save raw stimulus list
+        output_file = output_dir + '.' + sequence_name + '-last_exported_sequence'
+        save_pd_csv(sequence, output_file) 
             
     # BEGIN OUTPUT FILE FORMATTING
     if 'christian' in output_format: # 'christian' format (dataframe, versatile, amongst others for faceRT)
         output_file = output_dir + sequence_name
         save_pd_csv(sequence, output_file)
-    elif 'gabriela1' in output_format: # 'gabriela' format (for presentation)
+    if 'gabriela1' in output_format: # 'gabriela1' format (for "Presentation")
         tamplate_subdir = 'gabriela1/'
         header = open(local_dir+templates_dir+tamplate_subdir+'header.txt', 'r').read()
         footer = open(local_dir+templates_dir+tamplate_subdir+'footer.txt', 'r').read()
@@ -131,7 +137,7 @@ def main(output_format=False, scrambling_steps_id=False):
                         format_module(outfile, module, trial, idx)
                 else: raise InputError('Your condition_file_id values do not correspond to the script\'s expectations.')
                 outfile.write(footer)
-    elif 'gabriela2' in output_format:
+    if 'gabriela2' in output_format:
         sequence['name'] = sequence['top face']
         for pos, le_name in enumerate(sequence['name']):
             sequence['name'].ix[pos] = path.splitext(le_name)[0] + ' ;'
@@ -140,14 +146,12 @@ def main(output_format=False, scrambling_steps_id=False):
         sequence = sequence.rename(columns={'top face': 'fname_up', 'left face': 'fname_down_left', 'right face': 'fname_down_right', 'correct answer': 'rating'})
         output_file = output_dir + sequence_name + '_gabriela2'
         save_pd_tsv(sequence, output_file)
-    output_file = output_dir + '.' + sequence_name + 'last_exported_sequence'
-    save_pd_csv(sequence, output_file)
-    # BEGIN OUTPUT FILE FORMATTING
+    # END OUTPUT FILE FORMATTING
 
 def format_module(outfile, module, trial, idx):
     from os import path
     trial_name, _ = path.splitext(trial['top face'])
-    outfile.write(module.substitute(name=trial_name, t=trial['top face'], l=trial['left face'], r=trial['right face']))
+    outfile.write(module.substitute(name=trial_name, t=trial['top face'], l=trial['left face'], r=trial['right face'], side=trial['correct answer'], N=idx))
     
 if __name__ == '__main__':
 	main()

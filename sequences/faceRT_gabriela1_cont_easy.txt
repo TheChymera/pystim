@@ -1,0 +1,130 @@
+array{
+ picture{
+ description = "28M_HA_C100_cell22rand_a"; bitmap   { filename = "28M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "28M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "28M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=96;  
+ picture{
+ description = "04F_HA_C100_cell22rand_a"; bitmap   { filename = "04F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "04F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "04F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=97;  
+ picture{
+ description = "26M_FE_C100_cell22rand_a"; bitmap   { filename = "26M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "26M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "26M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=98;  
+ picture{
+ description = "23M_HA_C100_cell22rand_a"; bitmap   { filename = "23M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "23M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "23M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=99;  
+ picture{
+ description = "24M_HA_C100_cell22rand_a"; bitmap   { filename = "24M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "24M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "24M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=100;  
+ picture{
+ description = "24M_FE_C100_cell22rand_a"; bitmap   { filename = "24M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "24M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "24M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=101;  
+ picture{
+ description = "26M_HA_C100_cell22rand_a"; bitmap   { filename = "26M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "26M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "26M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=102;  
+ picture{
+ description = "01F_HA_C100_cell22rand_a"; bitmap   { filename = "01F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "01F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "01F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=103;  
+ picture{
+ description = "27M_FE_C100_cell22rand_a"; bitmap   { filename = "27M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "27M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "27M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=104;  
+ picture{
+ description = "21M_FE_C100_cell22rand_a"; bitmap   { filename = "21M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "21M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "21M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=105;  
+ picture{
+ description = "23M_FE_C100_cell22rand_a"; bitmap   { filename = "23M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "23M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "23M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=106;  
+ picture{
+ description = "21M_HA_C100_cell22rand_a"; bitmap   { filename = "21M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "21M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "21M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=107;  
+ picture{
+ description = "03F_FE_C100_cell22rand_a"; bitmap   { filename = "03F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "03F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "03F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=108;  
+ picture{
+ description = "07F_HA_C100_cell22rand_a"; bitmap   { filename = "07F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "07F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "07F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=109;  
+ picture{
+ description = "27M_HA_C100_cell22rand_a"; bitmap   { filename = "27M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "27M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "27M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=110;  
+ picture{
+ description = "05F_HA_C100_cell22rand_a"; bitmap   { filename = "05F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "05F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "05F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=111;  
+ picture{
+ description = "05F_FE_C100_cell22rand_a"; bitmap   { filename = "05F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "05F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "05F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=112;  
+ picture{
+ description = "25M_HA_C100_cell22rand_a"; bitmap   { filename = "25M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "25M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "25M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=113;  
+ picture{
+ description = "22M_FE_C100_cell22rand_a"; bitmap   { filename = "22M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "22M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "22M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=114;  
+ picture{
+ description = "03F_HA_C100_cell22rand_a"; bitmap   { filename = "03F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "03F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "03F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=115;  
+ picture{
+ description = "08F_HA_C100_cell22rand_a"; bitmap   { filename = "08F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "08F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "08F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=116;  
+ picture{
+ description = "08F_FE_C100_cell22rand_a"; bitmap   { filename = "08F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "08F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "08F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=117;  
+ picture{
+ description = "25M_FE_C100_cell22rand_a"; bitmap   { filename = "25M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "25M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "25M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=118;  
+ picture{
+ description = "22M_HA_C100_cell22rand_a"; bitmap   { filename = "22M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "22M_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "22M_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=119;  
+ picture{
+ description = "06F_HA_C100_cell22rand_a"; bitmap   { filename = "06F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "06F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "06F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=120;  
+ picture{
+ description = "02F_FE_C100_cell22rand_a"; bitmap   { filename = "02F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "02F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "02F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=121;  
+ picture{
+ description = "01F_FE_C100_cell22rand_a"; bitmap   { filename = "01F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "01F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "01F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=122;  
+ picture{
+ description = "04F_FE_C100_cell22rand_a"; bitmap   { filename = "04F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "04F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "04F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=123;  
+ picture{
+ description = "07F_FE_C100_cell22rand_a"; bitmap   { filename = "07F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "07F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "07F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=2; code=""; } stim_No=124;  
+ picture{
+ description = "06F_FE_C100_cell22rand_a"; bitmap   { filename = "06F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "06F_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "06F_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=125;  
+ picture{
+ description = "02F_HA_C100_cell22rand_a"; bitmap   { filename = "02F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "02F_HA_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "02F_HA_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=126;  
+ picture{
+ description = "28M_FE_C100_cell22rand_a"; bitmap   { filename = "28M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;};  x=0;   y=148; 
+										bitmap   { filename = "28M_FE_C100_cell22rand_b.jpg"; scale_factor = 0.7;};  x=296; y=-148;
+										bitmap   { filename = "28M_FE_C100_cell22rand_a.jpg"; scale_factor = 0.7;}; x=-296;y=-148;} target_button=1; code=""; } stim_No=127;  
+ }Face_up_array;
