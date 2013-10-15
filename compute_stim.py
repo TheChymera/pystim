@@ -36,7 +36,7 @@ def main(output_format=False, scrambling_steps_id=False):
     block_size = config.getint('Parameters', 'block_size')
     if output_format:
         pass
-    else: output_format = config.get('Parameters', 'output_format')
+    else: output_format = [str(i) for i in config.get('Parameters', 'output_format').split(',')]
     keep_oldsequence = config.getboolean('Parameters', 'keep_oldsequence')
     #END IMPORT VARIABLES
     
@@ -44,10 +44,8 @@ def main(output_format=False, scrambling_steps_id=False):
     local_dir = path.dirname(path.realpath(__file__)) + '/' 
     output_dir = local_dir + output_subdir
 
-    if keep_oldsequence:
-        if path.isfile(output_dir + '.' + sequence_name + 'last_exported_sequence'):
-            sequence = pd.from_csv(output_dir + '.' + sequence_name + 'last_exported_sequence.csv')
-        else: pass
+    if keep_oldsequence and path.isfile(output_dir + '.' + sequence_name + 'last_exported_sequence'):
+        sequence = pd.DataFrame.from_csv(output_dir + '.' + sequence_name + 'last_exported_sequence.csv')
     else:
         ### START CREATING THE NEW STIMLIST DATAFRAME
         scrambling_steps_id_withprefix = [scrambling_steps_prefix+str(i) for i in scrambling_steps_id]
@@ -105,7 +103,7 @@ def main(output_format=False, scrambling_steps_id=False):
         output_file = output_dir + sequence_name
         save_pd_csv(sequence, output_file)
     elif 'gabriela1' in output_format: # 'gabriela' format (for presentation)
-        tamplate_subdir = output_format + '/'
+        tamplate_subdir = 'gabriela1/'
         header = open(local_dir+templates_dir+tamplate_subdir+'header.txt', 'r').read()
         footer = open(local_dir+templates_dir+tamplate_subdir+'footer.txt', 'r').read()
         module = Template(open(local_dir+templates_dir+tamplate_subdir+'module.txt', 'r').read())
@@ -116,7 +114,7 @@ def main(output_format=False, scrambling_steps_id=False):
             sequence.ix[(sequence['correct answer'] == 'right'), 'correct answer'] = 1
             sequence.ix[(sequence['correct answer'] == 'left'), 'correct answer'] = 2
             #END REMAP SOME VALUES
-            output_file = output_dir + sequence_name + '_' + output_format + '_' + condition_file_id
+            output_file = output_dir + sequence_name + '_gabriela1_' + condition_file_id
             with save_gen(output_file, extension='.txt') as outfile:
                 outfile.write(header)
                 if condition_file_id == 'cont_hard':
@@ -133,14 +131,14 @@ def main(output_format=False, scrambling_steps_id=False):
                         format_module(outfile, module, trial, idx)
                 else: raise InputError('Your condition_file_id values do not correspond to the script\'s expectations.')
                 outfile.write(footer)
-    elif output_format == 'gabriela2':
+    elif 'gabriela2' in output_format:
         sequence['name'] = sequence['top face']
         for pos, le_name in enumerate(sequence['name']):
             sequence['name'].ix[pos] = path.splitext(le_name)[0] + ' ;'
         sequence.ix[(sequence['correct answer'] == 'right'), 'correct answer'] = 1
         sequence.ix[(sequence['correct answer'] == 'left'), 'correct answer'] = 2
         sequence = sequence.rename(columns={'top face': 'fname_up', 'left face': 'fname_down_left', 'right face': 'fname_down_right', 'correct answer': 'rating'})
-        output_file = output_dir + sequence_name + '_' + output_format
+        output_file = output_dir + sequence_name + '_gabriela2'
         save_pd_tsv(sequence, output_file)
     output_file = output_dir + '.' + sequence_name + 'last_exported_sequence'
     save_pd_csv(sequence, output_file)
