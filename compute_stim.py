@@ -8,11 +8,12 @@ def main(output_format=False, scrambling_steps_id=False):
     from numpy.random import permutation, choice, sample
     from os import path, listdir
     from itertools import product
-    from data_functions import get_config_file, save_pd_csv, save_gen, save_pd_tsv
+    from chr_helpers import get_config_file, save_pd_csv, save_gen, save_pd_tsv
     from routines import hariri
     from string import Template
     
-    config = get_config_file()
+    localpath = path.dirname(path.realpath(__file__)) + '/'
+    config = get_config_file(localpath)
     
     #IMPORT VARIABLES
     sequence_name = config.get('Files', 'sequence_name')
